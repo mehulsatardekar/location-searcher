@@ -74,7 +74,7 @@ function App() {
                 searchHistory.map((list, index) => <div className="list-details" key={index + "-"}>
                   <div className='details'>
                     <h4>{list}</h4>
-                    <div className='icon-box' onClick={(e) => shareLocationDetails(`http://localhost:5173/?query=${list}`)}>
+                    <div className='icon-box' onClick={(e) => shareLocationDetails(`${window.location.origin}?query=${list}`)}>
                       <FiShare />
                     </div>
                   </div>
